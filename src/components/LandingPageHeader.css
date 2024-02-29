@@ -8,6 +8,7 @@
   color: white;
   padding: 20px var(--app-block-padding);
 }
+
 ul {
   display: flex;
   list-style: none;

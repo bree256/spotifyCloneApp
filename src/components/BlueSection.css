@@ -1,0 +1,24 @@
+.Bluesection {
+  background-color: #1c75de;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  padding: 25px;
+  color: #ffffff;
+}
+span {
+  text-decoration: underline;
+}
+.terms {
+  margin-top: 80px;
+  font-size: x-small;
+}
+button {
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-right: 15px;
+  font-weight: bold;
+}
