@@ -12,7 +12,7 @@ function BlueSection() {
         <ButtonsBlueSection
           backgroundColor="#1c75de"
           text="SEE OTHER PLANS"
-          border="1px solid white"
+          border="2px solid white"
         />
       </div>
       <p className="terms">

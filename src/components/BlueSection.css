@@ -2,7 +2,7 @@
   background-color: #1c75de;
   text-align: center;
   width: 100%;
-  height: 400px;
+  height: 350px;
   padding: 25px;
   color: #ffffff;
 }
@@ -10,7 +10,7 @@ span {
   text-decoration: underline;
 }
 .terms {
-  margin-top: 80px;
+  margin-top: 50px;
   font-size: x-small;
 }
 button {
@@ -18,7 +18,13 @@ button {
   border-radius: 25px;
   border: none;
   color: white;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-right: 15px;
   font-weight: bold;
+}
+h1 {
+  margin-top: 50px;
+}
+p {
+  margin-top: 30px;
 }
