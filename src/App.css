@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+h1 {
+  text-align: center;
+}
+.subsectionwhite {
+  width: 60px;
+  height: 80px;
+}
+.herosection {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
