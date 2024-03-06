@@ -15,9 +15,10 @@ h1 {
 }
 .herosection {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
-  margin-left: 80px;
-  margin-top: 50px;
+  margin-left: 40px;
+  margin-top: 40px;
   flex-wrap: wrap;
+  padding: 20px;
 }
