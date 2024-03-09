@@ -21,4 +21,10 @@ h1 {
   margin-top: 40px;
   flex-wrap: wrap;
   padding: 20px;
+  height: 300px;
+}
+@media (max-width: 500px) {
+  ul {
+    display: none;
+  }
 }

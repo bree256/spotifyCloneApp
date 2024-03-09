@@ -4,17 +4,42 @@
   justify-content: space-between;
   background-color: #000;
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   color: white;
   padding: 20px var(--app-block-padding);
 }
-
+.menu {
+  position: relative;
+}
 ul {
   display: flex;
   list-style: none;
   gap: 40px;
   font-size: 15px;
   font-weight: bold;
+}
+.menuicon {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    padding: 20px var(--app-block-padding);
+  }
+  .menuicon {
+    display: block;
+  }
+  .menu ul {
+    display: block;
+  }
+  .menu ul li {
+    padding: 10px 0;
+  }
 }
 a {
   color: #fff;

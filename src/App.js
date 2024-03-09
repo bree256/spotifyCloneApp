@@ -3,6 +3,7 @@ import LandingPageHeader from "./components/LandingPageHeader";
 import BlueSection from "./components/BlueSection";
 import SubSectionWhite from "./components/SubSectionWhite";
 import cards from "./components/Cards";
+import PricePlanSection from "./components/PricePlanSection";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
         <SubSectionWhite img={cards[2].img} h3={cards[2].h3} p={cards[2].p} />
         <SubSectionWhite img={cards[3].img} h3={cards[3].h3} p={cards[3].p} />
       </div>
+      <PricePlanSection />
     </>
   );
 }
