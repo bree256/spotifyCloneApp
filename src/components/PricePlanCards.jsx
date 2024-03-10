@@ -15,15 +15,15 @@ function PricePlanCards() {
         <div className="info1">
           <div className="tick">
             <img src={Tick} />
-            <p>Ad-free music listening on mobile</p>
+            <p className="description">Ad-free music listening on mobile</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Group Session</p>
+            <p className="description">Group Session</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Download 30 songs on 1 mobile device</p>
+            <p className="description">Download 30 songs on 1 mobile device</p>
           </div>
           <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
           <div className="terms2">
@@ -42,15 +42,17 @@ function PricePlanCards() {
         <div className="info2">
           <div className="tick">
             <img src={Tick} />
-            <p>Ad-free music listening</p>
+            <p className="description">Ad-free music listening</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Group Session</p>
+            <p className="description">Group Session</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Download 10k songs/device on 5 devices</p>
+            <p className="description">
+              Download 10k songs/device on 5 devices
+            </p>
           </div>
           <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
           <div className="terms2">
@@ -72,19 +74,21 @@ function PricePlanCards() {
         <div className="info3">
           <div className="tick">
             <img src={Tick} />
-            <p>For couples who live together</p>
+            <p className="description">For couples who live together</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Ad-free music listening</p>
+            <p className="description">Ad-free music listening</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Group Session</p>
+            <p className="description">Group Session</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Download 10k songs/device, on 5 devices per account</p>
+            <p className="description">
+              Download 10k songs/device, on 5 devices per account
+            </p>
           </div>
           <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
           <div className="terms2">
@@ -106,23 +110,25 @@ function PricePlanCards() {
         <div className="info4">
           <div className="tick">
             <img src={Tick} />
-            <p>For family who live together</p>
+            <p className="description">For family who live together</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Block explicit music</p>
+            <p className="description">Block explicit music</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Ad-free music listening</p>
+            <p className="description">Ad-free music listening</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Group Session</p>
+            <p className="description">Group Session</p>
           </div>
           <div className="tick">
             <img src={Tick} />
-            <p>Download 10k songs/device on 5 devices</p>
+            <p className="description">
+              Download 10k songs/device on 5 devices
+            </p>
           </div>
           <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
           <div className="terms2">

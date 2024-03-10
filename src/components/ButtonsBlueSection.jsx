@@ -11,6 +11,7 @@ export function ButtonsBlueSection({
       style={{
         backgroundColor: backgroundColor,
         border: border,
+        // margin:margin
       }}
       className={className}
     >
