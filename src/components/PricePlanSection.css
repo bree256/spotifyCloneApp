@@ -55,7 +55,7 @@ button {
 .terms2 {
   margin-top: 20px;
   font-size: x-small;
-  height: 117px;
+  height: 96px;
   width: 280px;
   margin-left: -20px;
   justify-items: center;
@@ -73,7 +73,7 @@ span {
 }
 .top {
   margin-right: 60px;
-  margin-top: 0px;
+  margin-top: 10px;
   text-align: left;
 }
 .info1 {
