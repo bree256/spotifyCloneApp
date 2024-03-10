@@ -23,8 +23,11 @@ h1 {
   padding: 20px;
   height: 300px;
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   ul {
     display: none;
+  }
+  .herosection {
+    flex-direction: column;
   }
 }
