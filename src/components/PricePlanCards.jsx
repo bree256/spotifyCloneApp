@@ -25,7 +25,11 @@ function PricePlanCards() {
             <img src={Tick} />
             <p className="description">Download 30 songs on 1 mobile device</p>
           </div>
-          <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
+          <ButtonsBlueSection
+            backgroundColor="black"
+            text="VIEW PLANS"
+            width="250px"
+          />
           <div className="terms2">
             <span> Terms and conditions apply.</span>
           </div>
@@ -54,7 +58,11 @@ function PricePlanCards() {
               Download 10k songs/device on 5 devices
             </p>
           </div>
-          <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
+          <ButtonsBlueSection
+            backgroundColor="black"
+            text="VIEW PLANS"
+            width="250px"
+          />
           <div className="terms2">
             <p className="termsandconditions">
               <span> Terms and conditions apply.</span>1 month free not
@@ -90,7 +98,11 @@ function PricePlanCards() {
               Download 10k songs/device, on 5 devices per account
             </p>
           </div>
-          <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
+          <ButtonsBlueSection
+            backgroundColor="black"
+            text="VIEW PLANS"
+            width="250px"
+          />
           <div className="terms2">
             <p className="termsandconditions">
               <span> Terms and conditions apply.</span>1 month free not
@@ -130,7 +142,11 @@ function PricePlanCards() {
               Download 10k songs/device on 5 devices
             </p>
           </div>
-          <ButtonsBlueSection backgroundColor="black" text="VIEW PLANS" />
+          <ButtonsBlueSection
+            backgroundColor="black"
+            text="VIEW PLANS"
+            width="250px"
+          />
           <div className="terms2">
             <p className="termsandconditions">
               <span> Terms and conditions apply.</span>1 month free not

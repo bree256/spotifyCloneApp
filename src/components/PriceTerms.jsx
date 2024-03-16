@@ -9,6 +9,7 @@ function PriceTerms() {
         backgroundColor="white"
         text="LEARN MORE"
         border="2px solid black"
+        width="200px"
       />
     </div>
   );

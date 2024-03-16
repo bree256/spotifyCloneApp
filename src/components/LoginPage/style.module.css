@@ -1,0 +1,88 @@
+.loginpage {
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.buttonlogin {
+  color: #d9dadc;
+  margin-bottom: 60px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.loginpagelogos {
+  position: absolute;
+  left: 527px;
+  top: 40px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: -2px;
+  padding: 20px;
+  border-bottom: 1px solid #d9dadc;
+}
+.h2 {
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #d9dadc;
+  line-height: 0.1em;
+  margin: -40px 0 20px;
+  text-decoration: none;
+  margin-left: 326px;
+}
+.h2 span {
+  background: #fff;
+  padding: 0 2px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.form {
+  flex-direction: column;
+}
+.greenlogin {
+  color: black;
+  margin-left: 145px;
+}
+.hr {
+  width: 50%;
+  margin-left: 324px;
+}
+.input {
+  width: 400px;
+  height: 40px;
+  display: block;
+  margin-left: 465px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #d9dadc;
+  position: relative;
+}
+.eye {
+  position: absolute;
+  right: 493px;
+  top: 520px;
+  z-index: 2;
+}
+.label {
+  margin-right: 334px;
+  font-weight: 500;
+}
+.email {
+  margin-right: 200px;
+  font-weight: 500;
+}
+.h3 {
+  text-decoration: underline;
+  margin-right: 237px;
+  font-weight: 400;
+  font-size: medium;
+}

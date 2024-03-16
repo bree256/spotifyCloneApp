@@ -13,6 +13,7 @@ function BlueSection() {
           backgroundColor="#1c75de"
           text="SEE OTHER PLANS"
           border="2px solid white"
+          width="200px"
         />
       </div>
       <p className="terms">
