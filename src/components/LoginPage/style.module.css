@@ -18,16 +18,15 @@
 .loginpagelogos {
   position: absolute;
   left: 527px;
-  top: 40px;
 }
 .header {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-right: -2px;
-  padding: 20px;
-  border-bottom: 1px solid #d9dadc;
+  margin-right: 182px;
+  padding: 10px;
+  /* border-bottom: 1px solid #d9dadc; */
 }
 .h2 {
   width: 50%;
@@ -60,7 +59,7 @@
   height: 40px;
   display: block;
   margin-left: 465px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 2px solid #d9dadc;
@@ -68,8 +67,8 @@
 }
 .eye {
   position: absolute;
-  right: 493px;
-  top: 520px;
+  right: 485px;
+  top: 480px;
   z-index: 2;
 }
 .label {
@@ -85,4 +84,21 @@
   margin-right: 237px;
   font-weight: 400;
   font-size: medium;
+}
+
+.fb-svg {
+  color: red;
+}
+
+.apple-svg {
+  top: 110px;
+}
+.google-svg {
+  width: 20px;
+}
+.headerline {
+  margin: 0;
+}
+.remember {
+  margin-left: 5px;
 }

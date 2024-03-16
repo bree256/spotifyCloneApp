@@ -9,6 +9,7 @@ export function ButtonsBlueSection({
   margin,
   width,
   img: path,
+  svgClass,
 }) {
   return (
     <button
@@ -21,7 +22,7 @@ export function ButtonsBlueSection({
       className={className}
     >
       {text}
-      <img src={path} className={style.loginpagelogos} />
+      <img src={path} className={`${style.loginpagelogos} ${svgClass}`} />
     </button>
   );
 }
