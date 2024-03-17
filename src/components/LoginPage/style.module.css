@@ -2,6 +2,7 @@
   box-sizing: border-box;
   text-align: center;
   justify-content: space-between;
+  /* padding: var(--app-block-padding); */
 }
 
 .buttonlogin {
@@ -101,4 +102,19 @@
 }
 .remember {
   margin-left: 5px;
+}
+@media (max-width: 700px) {
+  .input {
+    margin-left: 200px;
+    background-color: blue;
+  }
+  .eye {
+    right: 310px;
+  }
+  .loginpagelogos {
+    left: 295px;
+  }
+  .h2 {
+    margin-left: 195px;
+  }
 }
