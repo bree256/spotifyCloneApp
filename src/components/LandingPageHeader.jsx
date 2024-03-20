@@ -4,16 +4,11 @@ import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
 import React from "react";
 
 function LandingPageHeader() {
-  // const [showMenu, setMenu] = React.useState(false);
-  // const toggleMenu = () => {
-  //   setMenu(showMenu === false);
   return (
     <div className="header">
       <div className="logo">
         <Logo />
       </div>
-      {/* <MenuIcon onClick={toggleMenu} fill="white" className="menuicon" />
-      {showMenu && ( */}
       <div className="menu">
         <ul>
           <li>

@@ -75,7 +75,7 @@ export default function LoginPage() {
         <h3 className={style.h3}>Forgot your password?</h3>
       </div>
       <div>
-        <input type="checkbox" />
+        <input type="checkbox" className={style.checkbox} />
         <label for="Remember Me" className={style.remember}>
           Remember me
         </label>
