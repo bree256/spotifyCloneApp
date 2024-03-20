@@ -2,6 +2,7 @@ import "./LandingPageHeader.css";
 import { Logo } from "./Logo";
 import { ReactComponent as MenuIcon } from "../assets/icons/menu.svg";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LandingPageHeader() {
   return (
@@ -22,14 +23,14 @@ function LandingPageHeader() {
           </li>
           <div className="line"></div>
           <li>
-            <a className="active" href="">
-              Sign up
-            </a>
+            <Link to="/signup" className="active">
+              Sign Up
+            </Link>
           </li>
           <li>
-            <a className="active" href="">
+            <Link to="/login" className="active">
               Log in
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

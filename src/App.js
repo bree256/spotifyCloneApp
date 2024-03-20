@@ -15,12 +15,22 @@ import {
 } from "react-router-dom";
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route>
-      <Route index element={<RealLandingPage />} />
-      <Route path="/login" element={<LoginPage />} />
-    </Route>
-  )
+  [
+    {
+      path: "/",
+      element: <RealLandingPage />,
+    },
+    {
+      path: "/login",
+      element: <LoginPage />,
+    },
+  ]
+  // createRoutesFromElements(
+  //   <Route>
+  //     <Route index element={<RealLandingPage />} />
+  //     <Route path="/login" element={<LoginPage />} />
+  //   </Route>
+  // )
 );
 function App() {
   return (
