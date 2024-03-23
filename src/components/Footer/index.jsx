@@ -30,7 +30,7 @@ export default function Footer() {
           <FaTwitter />
           <FaFacebookF />
         </div>
-        <div>
+        <div className={style.india}>
           <p>
             <FaGlobeAfrica /> India (English)
           </p>
