@@ -10,6 +10,8 @@ export function ButtonsBlueSection({
   width,
   img: path,
   svgClass,
+  onClick: onClick,
+  disabled: disabled,
 }) {
   return (
     <button
@@ -20,9 +22,11 @@ export function ButtonsBlueSection({
         width: width,
       }}
       className={className}
+      onClick={onClick}
+      disabled={disabled}
     >
-      {text}
       <img src={path} className={`${style.loginpagelogos} ${svgClass}`} />
+      {text}
     </button>
   );
 }

@@ -51,6 +51,9 @@
   color: black;
   margin-left: 145px;
 }
+.greenlogin:disabled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .hr {
   width: 50%;
   margin-left: 324px;

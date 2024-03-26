@@ -6,8 +6,60 @@ import FacebookBlue from "../../assets/icons/facebookblue.svg";
 import Apple from "../../assets/icons/appleicon.svg";
 // import Google from "../../assets/icons/googleicon.svg";
 import Google2 from "../../assets/icons/Google2.svg";
+// import { useNavigation } from "react-router-dom";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
+// import { toast } from "react-toastify";
 
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  // const { navigate } = useNavigation();
+  console.log({
+    password,
+    email,
+    rememberMe,
+  });
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
+  };
+  const handleRememberMeCheckbox = (event) => {
+    setRememberMe(event.target.checked);
+  };
+  const handleLogin = () => {
+    setIsSubmitting(true);
+    const payload = { username: email, password, rememberMe };
+    console.log({ payload }, "im inside handlelogin");
+    fetch("https://dummyjson.com/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    })
+      .then(async (response) => {
+        if (response.status >= 400) {
+          const data = await response.json();
+          throw data;
+        }
+        return response.json();
+      })
+
+      .then((response) => {
+        console.log("i got a login success", response);
+      })
+      .catch((error) => {
+        console.log("i got a login error", error.message);
+
+        toast.error(error.message);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
   return (
     <section className={style.loginpage}>
       <header className={style.header}>
@@ -49,6 +101,7 @@ export default function LoginPage() {
               Email Address or Username
             </label>
             <input
+              onChange={handleEmail}
               className={style.input}
               type="text"
               id="email"
@@ -63,6 +116,7 @@ export default function LoginPage() {
               <img src={EyeSvg} alt="eyelogo" className={style.eye} />
             </label>
             <input
+              onChange={handlePassword}
               className={style.input}
               type="password"
               id="password"
@@ -75,16 +129,25 @@ export default function LoginPage() {
         <h3 className={style.h3}>Forgot your password?</h3>
       </div>
       <div>
-        <input type="checkbox" className={style.checkbox} />
-        <label for="Remember Me" className={style.remember}>
+        <input
+          onChange={handleRememberMeCheckbox}
+          type="checkbox"
+          id="remember-me"
+          className={style.checkbox}
+        />
+        <label htmlFor="Remember Me" className={style.remember}>
           Remember me
         </label>
+        {/* <link to="/dashboard"> */}
         <ButtonsBlueSection
           className={style.greenlogin}
           backgroundColor="#1ed761"
           text="LOG IN"
           width="150px"
+          onClick={handleLogin}
+          disabled={isSubmitting}
         />
+        {/* </link> */}
       </div>
       <hr className={style.hr}></hr>
       <h3>Do you have an account?</h3>

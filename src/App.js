@@ -1,12 +1,8 @@
 import "./App.css";
-// import LandingPageHeader from "./components/LandingPageHeader";
-// import BlueSection from "./components/BlueSection";
-// import SubSectionWhite from "./components/SubSectionWhite";
-// import cards from "./components/Cards";
-// import PricePlanSection from "./components/PricePlanSection";
-// import Footer from "./components/Footer";
+import Dashboard from "./components/Dashboard";
 import LoginPage from "./components/LoginPage";
 import RealLandingPage from "./components/RealLandingPage";
+import { Toaster } from "react-hot-toast";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -23,6 +19,10 @@ const router = createBrowserRouter(
     {
       path: "/login",
       element: <LoginPage />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
   ]
   // createRoutesFromElements(
@@ -54,7 +54,10 @@ function App() {
     //   <Footer /> */}
 
     // </>
-    <RouterProvider router={router} />
+    <>
+      <Toaster />
+      <RouterProvider router={router} />
+    </>
   );
 }
 
