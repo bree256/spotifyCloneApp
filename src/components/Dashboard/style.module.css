@@ -1,0 +1,27 @@
+.footer {
+  height: 91px;
+  background-color: black;
+  padding: var(--dashboard-padding);
+  border-block: 1px solid #282828;
+}
+.container {
+  color: #b3b3b3;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  /* background: linear-gradient (rgba(255, 255, 255, 0.4), #191919); */
+}
+.content-wrapper > aside {
+  background-color: black;
+  width: 241px;
+}
+.content-wrapper > main {
+  flex: 1;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), #191919);
+}

@@ -17,8 +17,8 @@ function BlueSection() {
         />
       </div>
       <p className="terms">
-        <span>Terms and Condtions Apply</span>. 1month free not available for
-        users who already have premium
+        <span className="span2">Terms and Condtions Apply</span>. 1month free
+        not available for users who already have premium
       </p>
     </div>
   );

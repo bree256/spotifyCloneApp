@@ -20,6 +20,7 @@ code {
 
 :root {
   --app-block-padding: 180px;
+  --dashboard-padding: 20px;
 }
 @media (max-width: 769px) {
   :root {

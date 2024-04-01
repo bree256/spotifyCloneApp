@@ -65,8 +65,8 @@ function PricePlanCards() {
           />
           <div className="terms2">
             <p className="termsandconditions">
-              <span> Terms and conditions apply.</span>1 month free not
-              available for users who have already tried Premium.
+              <span className="span1"> Terms and conditions apply.</span>1 month
+              free not available for users who have already tried Premium.
             </p>
           </div>
         </div>
@@ -105,8 +105,8 @@ function PricePlanCards() {
           />
           <div className="terms2">
             <p className="termsandconditions">
-              <span> Terms and conditions apply.</span>1 month free not
-              available for users who have already tried Premium.
+              <span className="span1"> Terms and conditions apply.</span>1 month
+              free not available for users who have already tried Premium.
             </p>
           </div>
         </div>

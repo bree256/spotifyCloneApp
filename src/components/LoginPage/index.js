@@ -6,17 +6,17 @@ import FacebookBlue from "../../assets/icons/facebookblue.svg";
 import Apple from "../../assets/icons/appleicon.svg";
 // import Google from "../../assets/icons/googleicon.svg";
 import Google2 from "../../assets/icons/Google2.svg";
-// import { useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-// import { toast } from "react-toastify";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // const { navigate } = useNavigation();
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
   console.log({
     password,
     email,
@@ -50,16 +50,20 @@ export default function LoginPage() {
 
       .then((response) => {
         console.log("i got a login success", response);
+        localStorage.setItem("user", JSON.stringify(response));
+        navigate("/dashboard");
       })
       .catch((error) => {
         console.log("i got a login error", error.message);
 
         toast.error(error.message);
+        setError(error.message);
       })
       .finally(() => {
         setIsSubmitting(false);
       });
   };
+  console.log({ style });
   return (
     <section className={style.loginpage}>
       <header className={style.header}>
@@ -94,6 +98,7 @@ export default function LoginPage() {
       <h2 className={style.h2}>
         <span>OR</span>
       </h2>
+      {error && <div className={style.error}>{error}</div>}
       <div class="container">
         <form action="#" method="post" className={style.form}>
           <div class="form-group">
@@ -138,16 +143,15 @@ export default function LoginPage() {
         <label htmlFor="Remember Me" className={style.remember}>
           Remember me
         </label>
-        {/* <link to="/dashboard"> */}
+
         <ButtonsBlueSection
-          className={style.greenlogin}
-          backgroundColor="#1ed761"
+          className={isSubmitting ? style.greenlogindisabled : style.greenlogin}
+          // backgroundColor="#1ed761"
           text="LOG IN"
           width="150px"
           onClick={handleLogin}
           disabled={isSubmitting}
         />
-        {/* </link> */}
       </div>
       <hr className={style.hr}></hr>
       <h3>Do you have an account?</h3>

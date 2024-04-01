@@ -48,11 +48,13 @@
   flex-direction: column;
 }
 .greenlogin {
+  background-color: #1ed761;
   color: black;
   margin-left: 145px;
 }
-.greenlogin:disabled {
+.greenlogindisabled {
   background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 145px;
 }
 .hr {
   width: 50%;
@@ -111,6 +113,14 @@
   accent-color: #169b45;
   width: 20px;
   height: 15px;
+}
+.error {
+  background-color: red;
+  width: 50%;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 300px;
 }
 @media (max-width: 700px) {
   .input {

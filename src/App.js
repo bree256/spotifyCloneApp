@@ -3,35 +3,23 @@ import Dashboard from "./components/Dashboard";
 import LoginPage from "./components/LoginPage";
 import RealLandingPage from "./components/RealLandingPage";
 import { Toaster } from "react-hot-toast";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import { routes } from "./routes";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <RealLandingPage />,
-    },
-    {
-      path: "/login",
-      element: <LoginPage />,
-    },
-    {
-      path: "/dashboard",
-      element: <Dashboard />,
-    },
-  ]
-  // createRoutesFromElements(
-  //   <Route>
-  //     <Route index element={<RealLandingPage />} />
-  //     <Route path="/login" element={<LoginPage />} />
-  //   </Route>
-  // )
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RealLandingPage />,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: routes.dashboard,
+    element: <Dashboard />,
+  },
+]);
 function App() {
   return (
     // <>
