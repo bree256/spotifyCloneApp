@@ -3,8 +3,9 @@ import Dashboard from "./components/Dashboard";
 import LoginPage from "./components/LoginPage";
 import RealLandingPage from "./components/RealLandingPage";
 import { Toaster } from "react-hot-toast";
-import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { routes } from "./routes";
+import { MainDashboard } from "./components/Dashboard/MainDashboard";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,12 @@ const router = createBrowserRouter([
   {
     path: routes.dashboard,
     element: <Dashboard />,
+    children: [
+      {
+        path: "",
+        element: <MainDashboard />,
+      },
+    ],
   },
 ]);
 function App() {

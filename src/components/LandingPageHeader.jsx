@@ -8,7 +8,7 @@ function LandingPageHeader() {
   return (
     <div className="header">
       <div className="logo">
-        <Logo />
+        <Logo useWhite />
       </div>
       <div className="menu">
         <ul>

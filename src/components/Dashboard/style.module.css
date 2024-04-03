@@ -3,6 +3,10 @@
   background-color: black;
   padding: var(--dashboard-padding);
   border-block: 1px solid #282828;
+  /* position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0; */
 }
 .container {
   color: #b3b3b3;
@@ -15,6 +19,7 @@
 .content-wrapper {
   flex: 1;
   display: flex;
+  position: relative;
   /* background: linear-gradient (rgba(255, 255, 255, 0.4), #191919); */
 }
 .content-wrapper > aside {
@@ -23,5 +28,13 @@
 }
 .content-wrapper > main {
   flex: 1;
+  /* overflow-y: scroll; */
   background: linear-gradient(rgba(255, 255, 255, 0.4), #191919);
+}
+.content-wrapper .main .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }

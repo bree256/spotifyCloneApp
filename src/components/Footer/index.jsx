@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className={style.footer}>
       <div className={style.menu}>
         <div className={style.menuItem}>
-          <Logo />
+          <Logo useWhite />
           <div className={style.flex}>
             <Menu title="Company" options={aboutMenu} />
             <Menu title="Communities" options={CommunitiesMenu} />

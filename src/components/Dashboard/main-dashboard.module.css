@@ -1,0 +1,9 @@
+.container {
+  padding: 50px var(--dashboard-content-padding);
+}
+.h2,
+.h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: inte
