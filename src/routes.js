@@ -8,3 +8,4 @@ export const routes = {
 
 export function Music(id) {
   return routes.dashboard + "/music/" + id;
+}
